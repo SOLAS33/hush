@@ -1,6 +1,6 @@
 {
   "name": "hush",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Hush: hide a short message in a photograph, send it through WhatsApp, reveal it on the other side. Runs entirely on the device.",
   "type": "module",
@@ -10,7 +10,7 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:e2e": "node --import tsx tests/e2e/run.ts",
+    "test:e2e": "node --import tsx tests/e2e/run.ts && node --import tsx tests/e2e/ui.ts",
     "report": "node --import tsx tools/robustness-report.ts",
     "preview": "vite preview"
   },

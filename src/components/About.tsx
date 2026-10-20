@@ -10,7 +10,7 @@ export function About(p: { onBack: () => void }) {
 
       <h2>Limits you should know about</h2>
       <ul>
-        <li>This is a prototype. Whether a photo survives WhatsApp depends on how WhatsApp treats it, and that can change. Hush tests each photo against a range of re-compression on your own phone before it offers it, and warns you if it did not pass.</li>
+        <li>Whether a photo survives WhatsApp depends on how WhatsApp treats it, and that can change. Hush tests each photo against a range of re-compression on your own phone before it offers it, and warns you if it did not pass. It cannot test WhatsApp itself, so ask the other person to confirm the first time.</li>
         <li>Send the photo as a normal photo. Screenshots, crops, filters, and edits will destroy the message.</li>
         <li>Messages are short: about 240 characters, up to 512 bytes. Passcode protection uses 45 bytes of that room.</li>
         <li>Photos with fine detail (trees, fabric, a crowd) work best. Large smooth areas such as sky or a plain wall carry less safely.</li>
@@ -19,6 +19,8 @@ export function About(p: { onBack: () => void }) {
         <li>WhatsApp, your phone's photo library and your backups may keep the photo. Hush cannot control that.</li>
         <li>Sharing into the app from WhatsApp works on Android once Hush is installed. On iPhone, open Hush, tap Reveal message and choose the photo.</li>
       </ul>
+      <h2>Version</h2>
+      <p>Hush 1.0. Free, open source (MIT) at github.com/SOLAS33/hush. Made by Solas33.</p>
       <button className="btn" onClick={p.onBack}>
         Back
       </button>

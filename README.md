@@ -3,7 +3,7 @@
 Hide a short message in a photograph, send the photograph in WhatsApp as normal, and reveal the message on the other phone. Free, no account, no server. Everything happens on the device.
 
 **Live:** https://hush.solas33.com (installable web app for iPhone and Android)
-**Status:** prototype v0.1. The engine is proven against simulated JPEG recompression and real Chrome. It is **not yet proven through real WhatsApp transfers** on iPhone and Android. That test is the next step: see [docs/device-test-matrix.md](docs/device-test-matrix.md).
+**Version:** 1.0. The app is complete and passes 26 unit and integration tests and 74 browser checks in real Chrome. One thing is still unproven: **real WhatsApp transfers on iPhone and Android** (the engine is proven against simulated JPEG recompression and Chrome's own encoder, and Hush tests every photo on the phone before offering it). Run [docs/device-test-matrix.md](docs/device-test-matrix.md) to close that gap.
 
 ## How it works
 
@@ -60,6 +60,7 @@ docs/                architecture, algorithm evaluation, payload format, privacy
 * [Deployment](docs/deployment.md)
 * [Third-party software and licences](docs/third-party.md)
 * [Status, known limits and next steps](docs/STATUS.md)
+* [User guide](docs/user-guide.md) (install and use, for iPhone and Android)
 * [Original design brief](docs/design-brief.md)
 
 Licence: MIT (see [LICENSE](LICENSE)). The owner may change this before wider release.

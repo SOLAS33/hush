@@ -6,7 +6,7 @@ This is the report the design brief asks for in section 5.2. It records what was
 
 * Plain pixel-level embedding (least significant bit) does not survive any JPEG compression, even at quality 100. Rejected, as the brief expected.
 * A frequency-domain method (quantisation-index modulation of mid-frequency 8×8 DCT coefficients, spread over the whole image, soft-vote decoding, Reed-Solomon error correction) recovers messages exactly through JPEG recompression down to quality 40 and below, at the strengths the app uses, in simulation and in real Chrome.
-* **Not yet tested: real WhatsApp transfers on iPhone and Android.** The brief's gate ("do not proceed to full UI development until at least one candidate demonstrates reliable recovery through actual WhatsApp transfers") has not been met. The owner chose to publish the prototype first so that this test can be run on real phones. Until it passes, the product must not be described as WhatsApp-compatible. The app says "prototype" on every screen.
+* **Not yet tested: real WhatsApp transfers on iPhone and Android.** The brief's gate ("do not proceed to full UI development until at least one candidate demonstrates reliable recovery through actual WhatsApp transfers") has not been met. The owner chose to complete and publish version 1.0 first so that this test can be run on real phones. Until it passes, the product must not be described as guaranteed WhatsApp-compatible. The app tests every photo on the phone before offering it, and its limits are stated in the app and on the product page.
 
 ## Candidates
 

@@ -1,6 +1,6 @@
 # Device test matrix and script
 
-This is the approval gate. Everything automated passes; what has **not** been shown is a message surviving a real WhatsApp transfer. Run this on one iPhone and one Android phone, with two consenting WhatsApp accounts, and fill in the tables. Record the actual versions.
+This is the approval gate. Everything automated passes (see STATUS.md); what has **not** been shown is a message surviving a real WhatsApp transfer. Run this on one iPhone and one Android phone, with two consenting WhatsApp accounts, and fill in the tables. Record the actual versions.
 
 Use the live site, https://hush.solas33.com, or a local build.
 

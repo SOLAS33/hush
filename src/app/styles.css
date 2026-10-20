@@ -84,3 +84,14 @@ textarea { resize: vertical; min-height: 7rem; }
 details { border: 1px solid var(--line); border-radius: 12px; padding: 8px 14px; }
 summary { cursor: pointer; font-weight: 600; min-height: 32px; }
 @media (prefers-reduced-motion: no-preference) { .btn { transition: background-color 0.12s, opacity 0.12s; } }
+.top-link { padding: 8px 4px; }
+.card { display: grid; gap: 12px; padding: 16px; background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--radius); }
+.card h2 { margin: 0; }
+.steps { margin: 0; padding-left: 1.3rem; display: grid; gap: 10px; }
+.steps li::marker { font-weight: 700; color: var(--accent); }
+.foot { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+.toc { display: grid; gap: 4px; }
+.toc a { color: var(--accent); font-weight: 600; padding: 6px 0; }
+.guide-sec { display: grid; gap: 10px; scroll-margin-top: 12px; padding-top: 6px; border-top: 1px solid var(--line); }
+.guide-sec h2 { margin-top: 8px; }
+.tag { display: none; }
