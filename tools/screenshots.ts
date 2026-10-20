@@ -13,7 +13,6 @@ const root = join(import.meta.dirname, "..");
 const dist = join(root, "dist");
 const out = process.argv[2] ?? join(root, "tests", "e2e", "out");
 mkdirSync(out, { recursive: true });
-const photo = join(root, "tests", "e2e", "out", "source.jpg");
 const hidden = join(root, "tests", "e2e", "out", "hidden-wa65.jpg");
 
 const types: Record<string, string> = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png", ".webmanifest": "application/manifest+json" };
@@ -46,12 +45,8 @@ const shots: Buffer[] = [];
 {
   const p = await page();
   await p.goto(base);
-  await p.click("text/Create message");
-  await p.waitForSelector("label.btn.file");
-  await (await p.$$("label.btn.file input"))[1].uploadFile(photo);
-  await p.waitForSelector("textarea");
-  await p.type("textarea", "Meet at the usual place at 9.\nBring the blue folder.");
-  await p.waitForFunction(() => { const i = document.querySelector("img.shot") as HTMLImageElement | null; return !!i && i.complete && i.naturalWidth > 0; });
+  await p.click("text/Guide");
+  await p.waitForSelector("#install-iphone");
   await new Promise((r) => setTimeout(r, 300));
   shots.push(Buffer.from(await p.screenshot()));
   await p.close();
